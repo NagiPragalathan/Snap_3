@@ -67,6 +67,9 @@ def recognize_speech():
 
     # Initialize the text-to-speech engine
     engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id) # 1 is the index of a female voice in the list
+    engine.setProperty('rate', 160)
 
     while True:
         # Use the microphone as the source of audio
