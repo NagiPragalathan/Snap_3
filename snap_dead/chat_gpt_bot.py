@@ -4,6 +4,8 @@ import pyttsx3
 import speech_recognition as sr
 from deepface import DeepFace
 import wikipedia
+import gtts
+from playsound import playsound
 
 # Define a function to generate a response using ChatGPT
 def answer_question(question):
